@@ -8,4 +8,10 @@ def sort(numbers):
                 minpos = j
         
         swap = numbers[i]
+        numbers[i] = numbers[minpos]
+        numbers[minpos] = swap
 
+numbers = [77, 93, 56, 98, 41, 17, 80, 7, 39, 57]
+sort(numbers)
+
+print(numbers)
